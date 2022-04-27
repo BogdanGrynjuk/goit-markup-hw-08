@@ -28,8 +28,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-width: 528px;
-  min-height: 581px;
+
+  width: 450px;
+  // min-width: 528px;
+  // min-height: 581px;
 
   padding: 40px;
 
@@ -40,9 +42,14 @@
   border-radius: 4px;
 
   transition: transform 250ms $timing-function;
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    
+  }
 }
 
-.modal-close {
+.modal__btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -68,14 +75,8 @@
   }
 }
 
-.icon-close {
+.modal__icon {
   fill: currentColor;
-}
-
-.madal-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .modal__cta {
@@ -83,8 +84,19 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
+  text-align: center;
   color: $text-color-heading;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
+}
+
+.madal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .modal-form__field {
@@ -201,7 +213,17 @@
   border-color: $color-accent;
 }
 
+.check__label {
+  font-size: 12px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+}
+
 .check__link {
   color: $color-accent;
 }
+
+
 
