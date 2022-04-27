@@ -1,0 +1,20 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &--no-padding-top {
+    padding-top: 0;    
+  }
+
+  &--backgraund-dark {
+    background-color: $bg-color-section-dark;
+  }
+}
+
+.section__heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: $text-color-heading;
+}

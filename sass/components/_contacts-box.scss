@@ -1,0 +1,34 @@
+.contacts-box {
+  margin-right: 70px;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.address__list {
+  font-style: normal;
+  color: $text-color-footer-accent;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  display: block;
+  color: $text-color-footer-accent;
+  text-decoration: none;
+
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+  
+  &--white {
+    color: $text-color-footer-main;
+  }
+}
+

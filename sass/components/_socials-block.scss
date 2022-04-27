@@ -1,0 +1,24 @@
+.socials-block {
+  display: flex;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.socials-block__item {  
+  
+  &:not(:first-child)::before {
+    content: "";
+    height: 22px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    
+  }
+}
+
+.socials-block__link {
+  padding: 0 10px;
+  color: $color-accent;
+  
+  .socials-block__item:first-child > & {
+    padding-left: 0;
+  }
+}
