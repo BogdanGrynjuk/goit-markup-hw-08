@@ -1,14 +1,13 @@
 .team-cards {  
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
+  text-align: center; 
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;        
-  }
-  
+  }  
 }
 
 .team-cards__item {
@@ -18,6 +17,12 @@
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - (15px * 4)) / 2);
     margin: 15px;    
@@ -25,8 +30,7 @@
 
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - (15px * 8)) / 4);    
-  }
-  
+  }  
 }
 
 .team-cards__img {
@@ -41,7 +45,7 @@
 .team-cards__title {
   margin-bottom: 10px;
   font-weight: 500;
-  color: $text-color-heading;
+  color: $text-color-secondary;
 }
 
 .team-cards__position {

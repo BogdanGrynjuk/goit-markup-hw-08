@@ -19,12 +19,14 @@
 .contacts__item {
 
   &:not(:first-child) {
+
     @media screen and (max-width: 767px) {
     margin-bottom: 24px;
     }
   }
 
   &:not(:last-child) {
+    
     @media screen and (min-width: 1200px) {
       margin-right: 50px;
     }
@@ -34,7 +36,7 @@
 .contacts__link {
   display: flex;
   align-items: center;
-  color: $text-color-main;
+  color: $text-color-primary;
   transition: color 250ms $timing-function;
 
   &:hover,

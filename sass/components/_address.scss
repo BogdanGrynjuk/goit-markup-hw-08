@@ -1,23 +1,22 @@
-.contacts-box {
-  margin-right: 70px;
-}
-
 .address {
   margin-top: 20px;
 }
 
 .address__list {
-  font-style: normal;
-  color: $text-color-footer-accent;
+  font-style: normal;  
 }
 
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }  
 }
 
 .address__link {
   display: block;
-  color: $text-color-footer-accent;
+  color: $text-color-dark-primary;
   text-decoration: none;
 
   transition: color 250ms $timing-function;
@@ -27,8 +26,8 @@
     color: $color-accent;
   }
   
-  &--white {
-    color: $text-color-footer-main;
+  &--color-white {
+    color: $text-color-light-primary;
   }
 }
 

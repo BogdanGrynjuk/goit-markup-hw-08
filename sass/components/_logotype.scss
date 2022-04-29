@@ -8,11 +8,11 @@
   text-decoration: none;
 
   &__dark {
-    color: $text-color-black;
+    color: #000000;
   }
   
   &__light {
-    color: $text-color-footer-main;
+    color: $text-color-light-primary;
   }
 }
 

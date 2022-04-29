@@ -30,7 +30,7 @@
   display: block;
   
   font-size: 40px;
-  color: $text-color-heading;
+  color: $text-color-secondary;
   
   transition: color 250ms $timing-function; 
 
@@ -49,8 +49,7 @@
     font-size: inherit;
 
     &--current::after {
-      content: '';
-    
+      content: '';    
       position: absolute;
       left: 0;
       bottom: -1px;
