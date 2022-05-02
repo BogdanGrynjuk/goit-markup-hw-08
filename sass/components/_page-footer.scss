@@ -31,11 +31,17 @@
       margin-right: 70px;
     }
   }
+
+  &:not(:last-child) {
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 60px;      
+    }
+  }
   
   &:last-child {
 
     @media screen and (max-width: 1199px) {
-      margin-top: 60px;
       width: 100%;
     }
     
